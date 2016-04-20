@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F706349-56E4-4785-9CBB-A85DA6CF9202}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gara_DATA</RootNamespace>
+    <AssemblyName>Gara_DATA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=12.0.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=30cefae8f341f577, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=12.0.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gara_DAL\CT_BaoCaoDoanhSoDAL.cs" />
+    <Compile Include="Gara_DAL\BaoCaoDoanhSoDAL.cs" />
+    <Compile Include="Gara_DAL\BaoCaoTonDAL.cs" />
+    <Compile Include="Gara_DAL\CT_PhieuNhapVatTuPhuTungDAL.cs" />
+    <Compile Include="Gara_DAL\CT_PhieuSuaChuaDAL.cs" />
+    <Compile Include="Gara_DAL\HieuXeDAL.cs" />
+    <Compile Include="Gara_DAL\PhieuSuaChuaDAL.cs" />
+    <Compile Include="Gara_DAL\PhieuThuTienDAL.cs" />
+    <Compile Include="Gara_DAL\TienCongDAL.cs" />
+    <Compile Include="Gara_DAL\VatTuPhuTungDAL.cs" />
+    <Compile Include="Gara_DAL\XeDAL.cs" />
+    <Compile Include="GaRa_Info\BaoCaoDoanhSo.cs" />
+    <Compile Include="GaRa_Info\BaoCaoTon.cs" />
+    <Compile Include="GaRa_Info\CT_BaoCaoDoanhSo.cs" />
+    <Compile Include="GaRa_Info\CT_PhieuNhapVatTuPhuTung.cs" />
+    <Compile Include="GaRa_Info\CT_PhieuSuaChua.cs" />
+    <Compile Include="GaRa_Info\HieuXe.cs" />
+    <Compile Include="GaRa_Info\PhieuNhapVatTuPhuTung.cs" />
+    <Compile Include="GaRa_Info\PhieuSuaChua.cs" />
+    <Compile Include="GaRa_Info\PhieuThuTien.cs" />
+    <Compile Include="GaRa_Info\TienCong.cs" />
+    <Compile Include="GaRa_Info\VatTuPhuTung.cs" />
+    <Compile Include="GaRa_Info\Xe.cs" />
+    <Compile Include="Gara_DAL\PhieuNhapVatTuPhuTungDAL.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLDataProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

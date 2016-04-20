@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gara_UI", "Gara_UI\Gara_UI.csproj", "{48175B4F-448C-45BB-B270-DE71B8EDA10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gara_DATA", "Gara_DATA\Gara_DATA.csproj", "{7F706349-56E4-4785-9CBB-A85DA6CF9202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gara_BUS", "Gara_BUS\Gara_BUS.csproj", "{A06AE4AA-A170-44CA-82D9-48A1F6F0DB17}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://minhvu77.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Gara_UI\\Gara_UI.csproj
+		SccProjectName1 = Gara_UI
+		SccLocalPath1 = Gara_UI
+		SccProjectUniqueName2 = Gara_DATA\\Gara_DATA.csproj
+		SccProjectName2 = Gara_DATA
+		SccLocalPath2 = Gara_DATA
+		SccProjectUniqueName3 = Gara_BUS\\Gara_BUS.csproj
+		SccProjectName3 = Gara_BUS
+		SccLocalPath3 = Gara_BUS
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48175B4F-448C-45BB-B270-DE71B8EDA10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48175B4F-448C-45BB-B270-DE71B8EDA10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48175B4F-448C-45BB-B270-DE71B8EDA10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48175B4F-448C-45BB-B270-DE71B8EDA10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F706349-56E4-4785-9CBB-A85DA6CF9202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F706349-56E4-4785-9CBB-A85DA6CF9202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F706349-56E4-4785-9CBB-A85DA6CF9202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F706349-56E4-4785-9CBB-A85DA6CF9202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A06AE4AA-A170-44CA-82D9-48A1F6F0DB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06AE4AA-A170-44CA-82D9-48A1F6F0DB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06AE4AA-A170-44CA-82D9-48A1F6F0DB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06AE4AA-A170-44CA-82D9-48A1F6F0DB17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

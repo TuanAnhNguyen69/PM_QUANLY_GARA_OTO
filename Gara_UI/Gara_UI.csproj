@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48175B4F-448C-45BB-B270-DE71B8EDA10E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gara_UI</RootNamespace>
+    <AssemblyName>Gara_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Layout.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Layout.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=12.0.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=30cefae8f341f577, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.0.0.1, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=12.0.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\DevComponents DotNetBar for Windows Forms 12.0.0.1\DevComponents DotNetBar for Windows Forms 12.0.0.1\Crack\DLL\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Data.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Printing.v14.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Utils.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Xpo.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraBars.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraEditors.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraGrid.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraLayout.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPrinting.v14.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoDoanhSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoDoanhSo.Designer.cs">
+      <DependentUpon>frmBaoCaoDoanhSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoTon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoTon.Designer.cs">
+      <DependentUpon>frmBaoCaoTon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHieuXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHieuXe.Designer.cs">
+      <DependentUpon>frmHieuXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhoVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhoVatTu.Designer.cs">
+      <DependentUpon>frmKhoVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuSuaChua.Designer.cs">
+      <DependentUpon>frmPhieuSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuThuTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuThuTien.Designer.cs">
+      <DependentUpon>frmPhieuThuTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportPhieuSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportPhieuSuaChua.Designer.cs">
+      <DependentUpon>frmReportPhieuSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTienCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTienCong.Designer.cs">
+      <DependentUpon>frmTienCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTiepNhanXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTiepNhanXe.Designer.cs">
+      <DependentUpon>frmTiepNhanXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiem.Designer.cs">
+      <DependentUpon>frmTimKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVatTuPhuTung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVatTuPhuTung.Designer.cs">
+      <DependentUpon>frmVatTuPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyFormPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYGARAOTODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYGARAOTODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYGARAOTODataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QUANLYGARAOTODataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBaoCaoDoanhSo.resx">
+      <DependentUpon>frmBaoCaoDoanhSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoTon.resx">
+      <DependentUpon>frmBaoCaoTon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHieuXe.resx">
+      <DependentUpon>frmHieuXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhoVatTu.resx">
+      <DependentUpon>frmKhoVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuSuaChua.resx">
+      <DependentUpon>frmPhieuSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuThuTien.resx">
+      <DependentUpon>frmPhieuThuTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportPhieuSuaChua.resx">
+      <DependentUpon>frmReportPhieuSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTienCong.resx">
+      <DependentUpon>frmTienCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTiepNhanXe.resx">
+      <DependentUpon>frmTiepNhanXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiem.resx">
+      <DependentUpon>frmTimKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVatTuPhuTung.resx">
+      <DependentUpon>frmVatTuPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QUANLYGARAOTODataSet.xsc">
+      <DependentUpon>QUANLYGARAOTODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYGARAOTODataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYGARAOTODataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="QUANLYGARAOTODataSet.xss">
+      <DependentUpon>QUANLYGARAOTODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYGARAOTODataSet2.xsc">
+      <DependentUpon>QUANLYGARAOTODataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QUANLYGARAOTODataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QUANLYGARAOTODataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QUANLYGARAOTODataSet2.xss">
+      <DependentUpon>QUANLYGARAOTODataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gara_BUS\Gara_BUS.csproj">
+      <Project>{a06ae4aa-a170-44ca-82d9-48a1f6f0db17}</Project>
+      <Name>Gara_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gara_DATA\Gara_DATA.csproj">
+      <Project>{7f706349-56e4-4785-9cbb-a85da6cf9202}</Project>
+      <Name>Gara_DATA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gara.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
